@@ -3,3 +3,63 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.clearfix::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.container {
+    display: flex;
+}
+
+aside .menu-sx {
+    display: flex;
+    flex-direction:column;
+    width: 150px;
+    height: 100vh;
+    background-color: red;
+}
+
+
+
+header .reg-bar {
+    display:flex;
+    width: calc(100vw - 150px);
+    height: 70px;
+    background: linear-gradient(to right, #492c44, #354558);
+    justify-content: flex-end;
+    flex:1;
+}
+
+header .reg-bar a {
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+    margin: auto 20px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: green;
+}
+
+.foot{
+    position:relative;
+}
+
+.player {
+    /* display:flex; */
+    /* align-self: flex-end; */
+    width: 100vw;
+    height: 70px;
+    background-color: blue;
+    position:fixed;
+    bottom:0;
+}
