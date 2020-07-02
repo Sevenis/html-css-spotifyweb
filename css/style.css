@@ -18,10 +18,12 @@ aside .menu-sx {
     display: flex;
     flex-direction:column;
     width: 150px;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     color: lightgray;
     padding-left: 15px;
+    justify-content: space-between;
+    flex:1;
 }
 
 .logo-img {
@@ -32,33 +34,39 @@ aside .menu-sx {
 }
 
 aside .links {
-    text-decoration: none;
+    list-style: none;
 }
 
 aside .link {
     padding-bottom: 7px;
+    display: flex;
+    align-items: center;
 }
 
 aside .link .fas {
     font-size: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 aside .link p {
     font-size: 15px;
+    margin-left: 10px;
     display: inline-block;
 }
 
 aside .playlist-zone .playlist {
-    text-decoration: none;
+    list-style: none;
 }
 
 aside .playlist-zone li {
     padding-bottom:20px;
+    display: flex;
+    align-items: center;
 }
 
 aside .playlist-zone .fas {
     font-size: 30px;
+    margin-right: 10px;
 }
 
 aside .playlist-zone h2 {
@@ -72,16 +80,41 @@ aside .playlist-zone p {
     display: inline-block;
 }
 
+.bottom-aside hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.bottom-aside .fas {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.bottom-aside .btm-asd-up {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.bottom-aside .btm-asd-down {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
 
 
+.bottom-aside .btm-asd-down .fas{
+    font-size: 25px;
+}
 
+.bottom-aside .btm-asd-down small {
+    color: white;
+    font-size: 15px;
+}
 
-
-
-
-
-
-
+/* CORE HEADER */
 header .reg-bar {
     display:flex;
     width: calc(100vw - 150px);
@@ -102,11 +135,91 @@ header .reg-bar a {
     font-size: 10px;
 }
 
+/* CORE HEADER */
 main {
     width: 100%;
     height: calc(100% - 70px);
-    background-color: green;
+    background-color: #1d283a;
+    color: white;
+    padding-left: 25px;
+    padding-bottom: 70px;
 }
+
+main h1 {
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+main p {
+    font-size: 20px;
+    color: lightgray;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    padding-top:30px;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 25px;
+}
+
+/* .recently-played {
+    color: white;
+} */
+
+/* .recently-played h1 {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+} */
+
+.albums {
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+}
+
+.album {
+    padding-right: 50px;
+}
+
+.album img {
+    width: 237px;
+    height: 237px;
+    padding-bottom: 20px;
+}
+
+.recently-played {
+    color: white;
+}
+
+/* .tailor-made h1 {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+} */
+
+
+
+
+
+
 
 .foot{
     position:relative;
