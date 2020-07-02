@@ -19,8 +19,66 @@ aside .menu-sx {
     flex-direction:column;
     width: 150px;
     height: 100vh;
-    background-color: red;
+    background-color: black;
+    color: lightgray;
+    padding-left: 15px;
 }
+
+.logo-img {
+    width: auto;
+    height: 27px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+aside .links {
+    text-decoration: none;
+}
+
+aside .link {
+    padding-bottom: 7px;
+}
+
+aside .link .fas {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+aside .link p {
+    font-size: 15px;
+    display: inline-block;
+}
+
+aside .playlist-zone .playlist {
+    text-decoration: none;
+}
+
+aside .playlist-zone li {
+    padding-bottom:20px;
+}
+
+aside .playlist-zone .fas {
+    font-size: 30px;
+}
+
+aside .playlist-zone h2 {
+    color: white;
+    font-size: 20px;
+    padding:20px 0;
+}
+
+aside .playlist-zone p {
+    font-size: 15px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
 
 
 
