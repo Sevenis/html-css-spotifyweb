@@ -15,6 +15,8 @@
     max-width: 1200px;
 }
 
+/* ASIDE */
+
 aside .menu-sx {
     display: flex;
     flex-direction:column;
@@ -22,16 +24,24 @@ aside .menu-sx {
     height: calc(100% - 70px);
     background-color: black;
     color: lightgray;
-    padding-left: 15px;
+    padding-left: 10px;
     justify-content: space-between;
     flex:1;
+
 }
 
-.logo-img {
-    width: auto;
-    height: 27px;
-    margin-top: 20px;
-    margin-bottom: 18px;
+.logo {
+    padding: 10px 0;
+    display:flex;
+    align-items: center;
+}
+
+.logo .fa-spotify {
+    font-size: 30px;
+}
+
+.logo h1 {
+    padding-left: 10px;
 }
 
 aside .links {
@@ -46,7 +56,6 @@ aside .link {
 
 aside .link .fas {
     font-size: 20px;
-    /* margin-left: 10px; */
 }
 
 aside .link p {
@@ -105,7 +114,6 @@ aside .playlist-zone p {
     padding-bottom: 20px;
 }
 
-
 .bottom-aside .btm-asd-down .fas{
     font-size: 25px;
 }
@@ -115,7 +123,7 @@ aside .playlist-zone p {
     font-size: 15px;
 }
 
-/* CORE HEADER */
+/* CORE HEADER - BOTTONE UPGRADE */
 header .reg-bar {
     display:flex;
     width: calc(100vw - 150px);
@@ -136,7 +144,7 @@ header .reg-bar a {
     font-size: 10px;
 }
 
-/* CORE HEADER */
+/* CORE NAV BAR - MENU LINK */
 main {
     width: 100%;
     height: calc(100% - 140px);
@@ -176,24 +184,13 @@ nav li a {
     font-size: 25px;
 }
 
-/* .recently-played {
-    color: white;
-} */
-
-/* .recently-played h1 {
-    font-size: 50px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    text-align: left;
-} */
-
+/* GESTIONE ALBUM */
 .albums {
     text-align: center;
     display: flex;
     justify-content:flex-start;
     flex-wrap: wrap;
     padding: 30px 0;
-
 }
 
 .album {
@@ -206,23 +203,12 @@ nav li a {
     padding-bottom: 20px;
 }
 
+/* SEZIONE ALBUM RECENTI */
 .recently-played {
     color: white;
 }
 
-/* .tailor-made h1 {
-    font-size: 50px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-    text-align: left;
-} */
-
-
-
-
-
-
-
+/* SEZIONE FOOTER - PLAYER | POSITION FIXED */
 .foot{
     position:relative;
 }
@@ -312,6 +298,7 @@ nav li a {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 .player-bar-dx .fas {
@@ -321,4 +308,69 @@ nav li a {
 
 .player-bar-dx .linea {
     width: 170px;
+}
+
+/* MEDIA QUERY - SMARTPHONE */
+@media screen and (max-width: 479px) {
+    aside .menu-sx {
+        width: 50px;
+        height: calc(100% - 120px);
+    }
+
+    .menu-sx h1 {
+        display: none;
+    }
+
+    .upper-aside .links p {
+        display: none;
+    }
+
+    .playlist-zone {
+        display:none;
+    }
+
+    .bottom-aside .btm-asd-up, hr {
+        display: none;
+    }
+
+    .bottom-aside .btm-asd-down small {
+        display: none;
+    }
+
+    header .reg-bar {
+        width: calc(100vw - 50px);
+    }
+
+    main li a {
+        font-size: 15px;
+    }
+
+    .player-bar {
+        height: 120px;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer .player-up .fas, .far {
+        font-size:10px;
+    }
+
+    .player-song h4, p {
+        font-size: 15px;
+    }
+
+    .player-bar-dx .fas {
+        font-size:15px;
+        padding: 0 5px;
+        color: white;
+    }
+
+    .player .linea {
+        width: 100px;
+    }
+
+    .player-bar-dx .linea {
+        width: 50px;
+    }
 }
